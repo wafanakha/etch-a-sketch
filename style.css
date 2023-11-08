@@ -3,11 +3,23 @@
   margin: 0;
   box-sizing: border-box;
 }
-#flex-container {
+body {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#main-container {
+  padding: 20px;
+  background-color: wheat;
+}
+#flex-container {
+  display: grid;
+  grid-template-columns: repeat(21, 25px) 1fr 1fr 1fr;
+  grid-template-rows: repeat(21, 25px) 1fr 1fr 1fr;
+  width: 600px;
+  height: 600px;
 }
 .pix {
-  width: 1rem;
-  height: 1rem;
-  background-color: aqua;
+  background-color: rgb(204, 196, 205);
 }
